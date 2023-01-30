@@ -28,7 +28,6 @@ class BT:
         self.ser.close()
 
     async def read(self):
-        # await asyncio.sleep(1)
         await asyncio.sleep(0.1)
         self.ser.write(b'3')
         text = self.ser.readline().decode()
